@@ -3,13 +3,13 @@ Description=Dash's distributed currency daemon
 After=network.target
 
 [Service]
-User=dash
-Group=dash
+User=argontoken
+Group=argontoken
 
 Type=forking
-PIDFile=/var/lib/dashd/dashd.pid
-ExecStart=/usr/bin/dashd -daemon -pid=/var/lib/dashd/dashd.pid \
--conf=/etc/dash/dash.conf -datadir=/var/lib/dashd -disablewallet
+PIDFile=/var/lib/argontokend/argontokend.pid
+ExecStart=/usr/bin/argontokend -daemon -pid=/var/lib/argontokend/argontokend.pid \
+-conf=/etc/argontoken/argontoken.conf -datadir=/var/lib/argontokend -disablewallet
 
 Restart=always
 PrivateTmp=true

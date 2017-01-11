@@ -37,8 +37,8 @@ CActiveMasternode activeMasternode;
 
 /* *** BEGIN DARKSEND MAGIC - DASH **********
     Copyright (c) 2014-2015, Dash Developers
-        eduffield - evan@dashpay.io
-        udjinm6   - udjinm6@dashpay.io
+        eduffield - evan@argontokenpay.io
+        udjinm6   - udjinm6@argontokenpay.io
 */
 
 void CDarksendPool::ProcessMessageDarksend(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)
@@ -2230,7 +2230,7 @@ void ThreadCheckDarkSendPool()
     if(fLiteMode) return; //disable all Darksend/Masternode related functionality
 
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("dash-darksend");
+    RenameThread("argontoken-darksend");
 
     unsigned int c = 0;
 

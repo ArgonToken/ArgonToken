@@ -1,6 +1,6 @@
 all:
-	$(MAKE) -C .. dash_test
+	$(MAKE) -C .. argontoken_test
 clean:
-	$(MAKE) -C .. dash_test_clean
+	$(MAKE) -C .. argontoken_test_clean
 check:
-	$(MAKE) -C .. dash_test_check
+	$(MAKE) -C .. argontoken_test_check

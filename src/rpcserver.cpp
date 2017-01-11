@@ -309,16 +309,16 @@ static const CRPCCommand vRPCCommands[] =
     { "hidden",             "setmocktime",            &setmocktime,            true,      false,      false },
 
     /* Dash features */
-    { "dash",               "masternode",             &masternode,             true,      true,       false },
-    { "dash",               "masternodelist",         &masternodelist,         true,      true,       false },
-    { "dash",               "masternodebroadcast",    &masternodebroadcast,    true,      true,       false },
-    { "dash",               "mnbudget",               &mnbudget,               true,      true,       false },
-    { "dash",               "mnbudgetvoteraw",        &mnbudgetvoteraw,        true,      true,       false },
-    { "dash",               "mnfinalbudget",          &mnfinalbudget,          true,      true,       false },
-    { "dash",               "mnsync",                 &mnsync,                 true,      true,       false },
-    { "dash",               "spork",                  &spork,                  true,      true,       false },
+    { "argontoken",               "masternode",             &masternode,             true,      true,       false },
+    { "argontoken",               "masternodelist",         &masternodelist,         true,      true,       false },
+    { "argontoken",               "masternodebroadcast",    &masternodebroadcast,    true,      true,       false },
+    { "argontoken",               "mnbudget",               &mnbudget,               true,      true,       false },
+    { "argontoken",               "mnbudgetvoteraw",        &mnbudgetvoteraw,        true,      true,       false },
+    { "argontoken",               "mnfinalbudget",          &mnfinalbudget,          true,      true,       false },
+    { "argontoken",               "mnsync",                 &mnsync,                 true,      true,       false },
+    { "argontoken",               "spork",                  &spork,                  true,      true,       false },
 #ifdef ENABLE_WALLET
-    { "dash",               "darksend",               &darksend,               false,     false,      true  }, /* not threadSafe because of SendMoney */
+    { "argontoken",               "darksend",               &darksend,               false,     false,      true  }, /* not threadSafe because of SendMoney */
 
     /* Wallet */
     { "wallet",             "addmultisigaddress",     &addmultisigaddress,     true,      false,      true },
@@ -587,10 +587,10 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-            _("To use dashd, or the -server option to dash-qt, you must set an rpcpassword in the configuration file:\n"
+            _("To use argontokend, or the -server option to argontoken-qt, you must set an rpcpassword in the configuration file:\n"
               "%s\n"
               "It is recommended you use the following random password:\n"
-              "rpcuser=dashrpc\n"
+              "rpcuser=argontokenrpc\n"
               "rpcpassword=%s\n"
               "(you do not need to remember this password)\n"
               "The username and password MUST NOT be the same.\n"
@@ -1047,7 +1047,7 @@ json_spirit::Value CRPCTable::execute(const std::string &strMethod, const json_s
 }
 
 std::string HelpExampleCli(string methodname, string args){
-    return "> dash-cli " + methodname + " " + args + "\n";
+    return "> argontoken-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args){

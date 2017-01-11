@@ -166,7 +166,7 @@ public:
 
         vSeeds.push_back(CDNSSeedData("darkcoin.io", "dnsseed.darkcoin.io"));
         vSeeds.push_back(CDNSSeedData("masternode.io", "dnsseed.masternode.io"));
-        vSeeds.push_back(CDNSSeedData("dashpay.io", "dnsseed.dashpay.io"));
+        vSeeds.push_back(CDNSSeedData("argontokenpay.io", "dnsseed.argontokenpay.io"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of( 76);                    // Dash addresses start with 'X'
         base58Prefixes[SCRIPT_ADDRESS] = list_of( 16);                    // Dash script addresses start with '7'
@@ -230,19 +230,19 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        /*vSeeds.push_back(CDNSSeedData("dashpay.io", "testnet-seed.dashpay.io"));
-        vSeeds.push_back(CDNSSeedData("dash.qa", "testnet-seed.dash.qa"));
+        /*vSeeds.push_back(CDNSSeedData("argontokenpay.io", "testnet-seed.argontokenpay.io"));
+        vSeeds.push_back(CDNSSeedData("argontoken.qa", "testnet-seed.argontoken.qa"));
         *///legacy seeders
         vSeeds.push_back(CDNSSeedData("darkcoin.io",  "testnet-seed.darkcoin.io"));
         vSeeds.push_back(CDNSSeedData("darkcoin.qa", "testnet-seed.darkcoin.qa"));
         vSeeds.push_back(CDNSSeedData("masternode.io", "test.dnsseed.masternode.io"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = list_of(139);                    // Testnet dash addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = list_of( 19);                    // Testnet dash script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = list_of(139);                    // Testnet argontoken addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = list_of( 19);                    // Testnet argontoken script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY]     = list_of(239);                    // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x3a)(0x80)(0x61)(0xa0); // Testnet dash BIP32 pubkeys start with 'DRKV'
-        base58Prefixes[EXT_SECRET_KEY] = list_of(0x3a)(0x80)(0x58)(0x37); // Testnet dash BIP32 prvkeys start with 'DRKP'
-        base58Prefixes[EXT_COIN_TYPE]  = list_of(0x80000001);             // Testnet dash BIP44 coin type is '5' (All coin's testnet default)
+        base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x3a)(0x80)(0x61)(0xa0); // Testnet argontoken BIP32 pubkeys start with 'DRKV'
+        base58Prefixes[EXT_SECRET_KEY] = list_of(0x3a)(0x80)(0x58)(0x37); // Testnet argontoken BIP32 prvkeys start with 'DRKP'
+        base58Prefixes[EXT_COIN_TYPE]  = list_of(0x80000001);             // Testnet argontoken BIP44 coin type is '5' (All coin's testnet default)
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
 

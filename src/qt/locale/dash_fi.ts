@@ -188,7 +188,7 @@
         <translation>Lompakko salattu</translation>
     </message>
     <message>
-        <source>Dash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
+        <source>Dash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argontokens from being stolen by malware infecting your computer.</source>
         <translation>Dash sulkeutuu nyt salauksen viimeistelyä varten. Muista että salaus pelkästään ei voi estää Dashiesi varastamista jos koneesi saastuu haittaohjelmilla tai viruksilla.</translation>
     </message>
     <message>
@@ -263,7 +263,7 @@
         <translation>&amp;Vastaanota</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dash: URIs)</source>
+        <source>Request payments (generates QR codes and argontoken: URIs)</source>
         <translation>Pyydä maksuja (Luo QR koodit ja Dash: URIt)</translation>
     </message>
     <message>
@@ -443,7 +443,7 @@
         <translation>Avaa &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a dash: URI or payment request</source>
+        <source>Open a argontoken: URI or payment request</source>
         <translation>Avaa Dash: URI tai maksupyyntö</translation>
     </message>
     <message>
@@ -1264,9 +1264,9 @@ Varoitus: Jos käytät käyttöjärjestelmää (Live os) suoraan usb, dvd tai cd
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/dash/</source>
+https://www.transifex.com/projects/p/argontoken/</source>
         <translation>Puuttuuko sopiva kieli tai käännös on kesken? Auta käännöstyössä täällä:
-https://www.transifex.com/projects/p/dash/</translation>
+https://www.transifex.com/projects/p/argontoken/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1569,7 +1569,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Maksupyyntövirhe</translation>
     </message>
     <message>
-        <source>Cannot start dash: click-to-pay handler</source>
+        <source>Cannot start argontoken: click-to-pay handler</source>
         <translation>Ei voi käynnistää Dashia: click-to-pay handler</translation>
     </message>
     <message>
@@ -2297,7 +2297,7 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Jos mukautettu siirtomaksu on asetettu 1000 duff ja siirtotapahtuma on vain 250 tavua,&lt;br /&gt;tällöin "per kilotavu" maksaa vain 250 duffs siirtomaksun, kun taas "yhteensä vähintään" maksaa 1000 duffs.&lt;br /&gt;Siirtotapahtumat jotka ovat isompia kuin kilotavu, molemmat maksaa "per kilotavu".</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for dash transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for argontoken transactions than the network can process.</source>
         <translation>Minimi siirtomaksun maksaminen on ok niin kauan kun siirtotapahtumien määrä on pienempi kuin tila lohkoissa.&lt;br /&gt;Mutta ota huomioon että tämä voi johtaa siirtotapahtumaan jota ei vahvisteta koskaan, jos siirtotapahtumia on enemmän kuin verkko voi käsitellä.</translation>
     </message>
     <message>
@@ -2564,7 +2564,7 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Viesti:</translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dash network.</source>
+        <source>A message that was attached to the argontoken: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dash network.</source>
         <translation>Viesti joka liitettiin Dash: URI joka talletetaan siirtotapahtuman kanssa viitteeksi sinulle. Huomio: Tätä viestiä ei lähetetä Dash verkkoon.</translation>
     </message>
     <message>
@@ -3325,7 +3325,7 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
     </message>
 </context>
 <context>
-    <name>dash-core</name>
+    <name>argontoken-core</name>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Kytkeydy annettuun osoitteeseen ja pidä linja aina auki. Käytä [host]:port merkintätapaa IPv6:lle.</translation>
@@ -3717,10 +3717,10 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
 Käännös päivitetty: 1.9.2015 by AjM.</translation>
     </message>
     <message>
-        <source>To use dashd, or the -server option to dash-qt, you must set an rpcpassword in the configuration file:
+        <source>To use argontokend, or the -server option to argontoken-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=dashrpc
+rpcuser=argontokenrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3728,10 +3728,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "Dash Alert" admin@foo.com
 </source>
-        <translation>Käyttääksesi dashd:ia tai -server valintaa dash-qt:lle, sinun tulee asettaa rpc salasana asetustiedostossa:
+        <translation>Käyttääksesi argontokend:ia tai -server valintaa argontoken-qt:lle, sinun tulee asettaa rpc salasana asetustiedostossa:
 %s
 Suositellaan että käytät allaolevaa satunnaista salasanaa:
-rpcuser=dashrpc
+rpcuser=argontokenrpc
 rpcpassword=%s
 (sinun ei tarvitse muistaa tätä salasanaa)
 Käyttäjätunnus ja salasana on oltava ERILAISET.

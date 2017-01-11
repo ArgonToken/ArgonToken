@@ -55,8 +55,8 @@ Value darksend(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() == 0)
         throw runtime_error(
-            "darksend <dashaddress> <amount>\n"
-            "dashaddress, reset, or auto (AutoDenominate)"
+            "darksend <argontokenaddress> <amount>\n"
+            "argontokenaddress, reset, or auto (AutoDenominate)"
             "<amount> is a real and will be rounded to the next 0.1"
             + HelpRequiringPassphrase());
 
@@ -77,8 +77,8 @@ Value darksend(const Array& params, bool fHelp)
 
     if (params.size() != 2)
         throw runtime_error(
-            "darksend <dashaddress> <amount>\n"
-            "dashaddress, denominate, or auto (AutoDenominate)"
+            "darksend <argontokenaddress> <amount>\n"
+            "argontokenaddress, denominate, or auto (AutoDenominate)"
             "<amount> is a real and will be rounded to the next 0.1"
             + HelpRequiringPassphrase());
 
@@ -140,7 +140,7 @@ Value masternode(const Array& params, bool fHelp)
                 "  genkey       - Generate new masternodeprivkey\n"
                 "  enforce      - Enforce masternode payments\n"
                 "  outputs      - Print masternode compatible outputs\n"
-                "  start        - Start masternode configured in dash.conf\n"
+                "  start        - Start masternode configured in argontoken.conf\n"
                 "  start-alias  - Start single masternode by assigned alias configured in masternode.conf\n"
                 "  start-<mode> - Start masternodes configured in masternode.conf (<mode>: 'all', 'missing', 'disabled')\n"
                 "  status       - Print masternode status information\n"

@@ -23,7 +23,7 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Dash (http://www.dashpay.io/),
+ * This is the developer documentation of the reference client for an experimental new digital currency called Dash (http://www.argontokenpay.io/),
  * which enables instant payments to anyone, anywhere in the world. Dash uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
@@ -65,7 +65,7 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/dash.conf are parsed in qt/dash.cpp's main()
+    // If Qt is used, parameters/argontoken.conf are parsed in qt/argontoken.cpp's main()
     ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir
@@ -80,7 +80,7 @@ bool AppInit(int argc, char* argv[])
         else
         {
             strUsage += "\n" + _("Usage:") + "\n" +
-                  "  dashd [options]                     " + _("Start Dash Core Daemon") + "\n";
+                  "  argontokend [options]                     " + _("Start Dash Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -119,12 +119,12 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "dash:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "argontoken:"))
                 fCommandLine = true;
 
         if (fCommandLine)
         {
-            fprintf(stderr, "Error: There is no RPC client functionality in dashd anymore. Use the dash-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in argontokend anymore. Use the argontoken-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32
@@ -188,7 +188,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect dashd signal handlers
+    // Connect argontokend signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? 0 : 1);

@@ -28,7 +28,7 @@
       </sizepolicy>
      </property>
      <property name="pixmap">
-      <pixmap resource="../dash.qrc">:/images/about</pixmap>
+      <pixmap resource="../argontoken.qrc">:/images/about</pixmap>
      </property>
     </widget>
    </item>
@@ -87,7 +87,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../dash.qrc"/>
+  <include location="../argontoken.qrc"/>
  </resources>
  <connections>
   <connection>

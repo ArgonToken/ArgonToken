@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/dash-config.h"
+#include "config/argontoken-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -141,7 +141,7 @@ void OptionsModel::Init()
     if (settings.contains("nDarksendRounds"))
         SoftSetArg("-darksendrounds", settings.value("nDarksendRounds").toString().toStdString());
     if (settings.contains("nAnonymizeDarkcoinAmount"))
-        SoftSetArg("-anonymizedashamount", settings.value("nAnonymizeDarkcoinAmount").toString().toStdString());
+        SoftSetArg("-anonymizeargontokenamount", settings.value("nAnonymizeDarkcoinAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -152,7 +152,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in dash.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in argontoken.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())

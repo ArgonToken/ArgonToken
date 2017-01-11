@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/dash-config.h"
+#include "config/argontoken-config.h"
 #endif
 
 #include "util.h"
@@ -232,8 +232,8 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "dash" is a composite category enabling all Dash-related debug output
-            if(ptrCategory->count(string("dash"))) {
+            // "argontoken" is a composite category enabling all Dash-related debug output
+            if(ptrCategory->count(string("argontoken"))) {
                 ptrCategory->insert(string("darksend"));
                 ptrCategory->insert(string("instantx"));
                 ptrCategory->insert(string("masternode"));
@@ -396,7 +396,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "dash";
+    const char* pszModule = "argontoken";
 #endif
     if (pex)
         return strprintf(
@@ -420,7 +420,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Windows < Vista: C:\Documents and Settings\Username\Application Data\Dash
     // Windows >= Vista: C:\Users\Username\AppData\Roaming\Dash
     // Mac: ~/Library/Application Support/Dash
-    // Unix: ~/.dash
+    // Unix: ~/.argontoken
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "Dash";
@@ -438,7 +438,7 @@ boost::filesystem::path GetDefaultDataDir()
     return pathRet / "Dash";
 #else
     // Unix
-    return pathRet / ".dash";
+    return pathRet / ".argontoken";
 #endif
 #endif
 }
@@ -485,7 +485,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "dash.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "argontoken.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 
@@ -504,7 +504,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()){
-        // Create empty dash.conf if it does not excist
+        // Create empty argontoken.conf if it does not excist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -516,7 +516,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it)
     {
-        // Don't overwrite existing settings so command line settings override dash.conf
+        // Don't overwrite existing settings so command line settings override argontoken.conf
         string strKey = string("-") + it->string_key;
         if (mapSettingsRet.count(strKey) == 0)
         {
@@ -533,7 +533,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 #ifndef WIN32
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "dashd.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "argontokend.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }
