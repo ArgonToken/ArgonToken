@@ -4,11 +4,11 @@
 
 Dash Core version 0.12.0 is now available from:
 
-  https://argontokenpay.io/downloads
+  https://argontoken.io/downloads
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/argontokenpay/argontoken/issues
+  https://github.com/argontoken/argontoken/issues
 
 
 How to Upgrade

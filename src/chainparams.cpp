@@ -166,7 +166,7 @@ public:
 
         vSeeds.push_back(CDNSSeedData("darkcoin.io", "dnsseed.darkcoin.io"));
         vSeeds.push_back(CDNSSeedData("masternode.io", "dnsseed.masternode.io"));
-        vSeeds.push_back(CDNSSeedData("argontokenpay.io", "dnsseed.argontokenpay.io"));
+        vSeeds.push_back(CDNSSeedData("argontoken.io", "dnsseed.argontoken.io"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of( 76);                    // Dash addresses start with 'X'
         base58Prefixes[SCRIPT_ADDRESS] = list_of( 16);                    // Dash script addresses start with '7'
@@ -230,7 +230,7 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        /*vSeeds.push_back(CDNSSeedData("argontokenpay.io", "testnet-seed.argontokenpay.io"));
+        /*vSeeds.push_back(CDNSSeedData("argontoken.io", "testnet-seed.argontoken.io"));
         vSeeds.push_back(CDNSSeedData("argontoken.qa", "testnet-seed.argontoken.qa"));
         *///legacy seeders
         vSeeds.push_back(CDNSSeedData("darkcoin.io",  "testnet-seed.darkcoin.io"));

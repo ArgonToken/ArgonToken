@@ -22,9 +22,9 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage: http://www.argontokenpay.io/
-Vcs-Git: git://github.com/argontokenpay/argontoken.git
-Vcs-Browser: http://github.com/argontokenpay/argontoken
+Homepage: http://www.argontoken.io/
+Vcs-Git: git://github.com/argontoken/argontoken.git
+Vcs-Browser: http://github.com/argontoken/argontoken
 
 Package: argontokend
 Architecture: any

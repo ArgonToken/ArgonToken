@@ -32,7 +32,7 @@
   <string>Dash-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>io.argontokenpay.Dash-Qt</string>
+  <string>io.argontoken.Dash-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -65,7 +65,7 @@
         <string>application/x-argontoken-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>argontokenpaymentrequest</string>
+          <string>argontokenmentrequest</string>
         </array>
       </dict>
     </dict>

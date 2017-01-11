@@ -34,7 +34,7 @@ Drag Dash-Qt to your applications folder, and then run Dash-Qt.
 
 * See the documentation at the [Dash Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [#argontokenpay](http://webchat.freenode.net?channels=argontokenpay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=argontokenpay).
+* Ask for help on [#argontoken](http://webchat.freenode.net?channels=argontoken) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=argontoken).
 * Ask for help on the [DashTalk](https://argontokentalk.org/) forums.
 
 Building
@@ -46,7 +46,7 @@ The following are developer notes on how to build Dash on your native platform. 
 
 Development
 ---------------------
-The Dash repo's [root README](https://github.com/argontokenpay/argontoken/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Dash repo's [root README](https://github.com/argontoken/argontoken/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Coding Guidelines](coding.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -58,7 +58,7 @@ The Dash repo's [root README](https://github.com/argontokenpay/argontoken/blob/m
 
 ### Resources
 * Discuss on the [DashTalk](https://argontokentalk.org/) forums, in the Development & Technical Discussion board.
-* Discuss on [#argontokenpay](http://webchat.freenode.net/?channels=argontokenpay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=argontokenpay).
+* Discuss on [#argontoken](http://webchat.freenode.net/?channels=argontoken) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=argontoken).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

@@ -137,7 +137,7 @@ I usually confirm that remote is on the correct block by issuing:
 
 ```argontokend getinfo```
 
-And compare with the official explorer at http://explorer.argontokenpay.io/chain/Dash
+And compare with the official explorer at http://explorer.argontoken.io/chain/Dash
 
 ### Local
 

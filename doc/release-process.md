@@ -2,7 +2,7 @@ Release Process
 ====================
 
 * update translations (ping wumpus, Diapolo or tcatm on IRC)
-* see https://github.com/argontokenpay/argontoken/blob/master/doc/translation_process.md#syncing-with-transifex
+* see https://github.com/argontoken/argontoken/blob/master/doc/translation_process.md#syncing-with-transifex
 
 * * *
 
@@ -134,9 +134,9 @@ rm SHA256SUMS
 - Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the bitcoin.org server
   into `/var/www/bin/bitcoin-core-${VERSION}`
 
-- Update argontokenpay.io version ***TODO***
+- Update argontoken.io version ***TODO***
 
-  - First, check to see if the argontokenpay.io maintainers have prepared a
+  - First, check to see if the argontoken.io maintainers have prepared a
     release: https://github.com/bitcoin/bitcoin.org/labels/Releases
 
       - If they have, it will have previously failed their Travis CI
@@ -155,11 +155,11 @@ rm SHA256SUMS
 
   - Dash-development mailing list
 
-  - Update title of #argontokenpay on Freenode IRC
+  - Update title of #argontoken on Freenode IRC
 
   - Optionally reddit /r/Dashpay, ... but this will usually sort out itself
 
-- Notify Flare (?) ***TODO*** so that he can start building [https://launchpad.net/~argontokenpay/+archive/ubuntu/argontoken](the PPAs) ***TODO***
+- Notify Flare (?) ***TODO*** so that he can start building [https://launchpad.net/~argontoken/+archive/ubuntu/argontoken](the PPAs) ***TODO***
 
 - Add release notes for the new version to the directory `doc/release-notes` in git master
 
