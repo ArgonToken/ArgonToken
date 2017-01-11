@@ -56,27 +56,7 @@ static void convertSeed6(std::vector<CAddress> &vSeedsOut, const SeedSpec6 *data
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
-        (  1500, uint256("0x000000aaf0300f59f49bc3e970bad15c11f961fe2347accffff19d96ec9778e3"))
-        (  4991, uint256("0x000000003b01809551952460744d5dbb8fcbd6cbae3c220267bf7fa43f837367"))
-        (  9918, uint256("0x00000000213e229f332c0ffbe34defdaa9e74de87f2d8d1f01af8d121c3c170b"))
-        ( 16912, uint256("0x00000000075c0d10371d55a60634da70f197548dbbfa4123e12abfcbc5738af9"))
-        ( 23912, uint256("0x0000000000335eac6703f3b1732ec8b2f89c3ba3a7889e5767b090556bb9a276"))
-        ( 35457, uint256("0x0000000000b0ae211be59b048df14820475ad0dd53b9ff83b010f71a77342d9f"))
-        ( 45479, uint256("0x000000000063d411655d590590e16960f15ceea4257122ac430c6fbe39fbf02d"))
-        ( 55895, uint256("0x0000000000ae4c53a43639a4ca027282f69da9c67ba951768a20415b6439a2d7"))
-        ( 68899, uint256("0x0000000000194ab4d3d9eeb1f2f792f21bb39ff767cb547fe977640f969d77b7"))
-        ( 74619, uint256("0x000000000011d28f38f05d01650a502cc3f4d0e793fbc26e2a2ca71f07dc3842"))
-        ( 75095, uint256("0x0000000000193d12f6ad352a9996ee58ef8bdc4946818a5fec5ce99c11b87f0d"))
-        ( 88805, uint256("0x00000000001392f1652e9bf45cd8bc79dc60fe935277cd11538565b4a94fa85f"))
-        ( 107996, uint256("0x00000000000a23840ac16115407488267aa3da2b9bc843e301185b7d17e4dc40"))
-        ( 137993, uint256("0x00000000000cf69ce152b1bffdeddc59188d7a80879210d6e5c9503011929c3c"))
-        ( 167996, uint256("0x000000000009486020a80f7f2cc065342b0c2fb59af5e090cd813dba68ab0fed"))
-        ( 207992, uint256("0x00000000000d85c22be098f74576ef00b7aa00c05777e966aff68a270f1e01a5"))
-        ( 312645, uint256("0x0000000000059dcb71ad35a9e40526c44e7aae6c99169a9e7017b7d84b1c2daf"))
-        ( 407452, uint256("0x000000000003c6a87e73623b9d70af7cd908ae22fee466063e4ffc20be1d2dbc"))
-        ( 477481, uint256("0x0000000000083dbb96b0eb7d3ec9f2c43e015817332c757f8b5a794abf2fdffb"))
-        ( 523412, uint256("0x000000000000e54f036576a10597e0e42cc22a5159ce572f999c33975e121d4d"))
-        ( 523930, uint256("0x0000000000000bccdb11c2b1cfb0ecab452abf267d89b7f46eaf2d54ce6e652c"))
+        (  0, uint256("0x000000aaf0300f59f49bc3e970bad15c11f961fe2347accffff19d96ec9778e3"))
         ;
 static const Checkpoints::CCheckpointData data = {
         &mapCheckpoints,
@@ -120,12 +100,12 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0xbf;
-        pchMessageStart[1] = 0x0c;
-        pchMessageStart[2] = 0x6b;
-        pchMessageStart[3] = 0xbd;
-        vAlertPubKey = ParseHex("048240a8748a80a286b270ba126705ced4f2ce5a7847b3610ea3c06513150dade2a8512ed5ea86320824683fc0818f0ac019214973e677acd1244f6d0571fc5103");
-        nDefaultPort = 9999;
+        pchMessageStart[0] = 0xaf;
+        pchMessageStart[1] = 0x01;
+        pchMessageStart[2] = 0x65;
+        pchMessageStart[3] = 0xad;
+        vAlertPubKey = ParseHex("048240a7748a80a286b270ba126705ced4f2ca5a7847b3610ea3c06512150dade2a8512ed5ea86320824681fc0818f0ac019214973e677acd1244f5d0571fc5103");
+        nDefaultPort = 60522;
         bnProofOfWorkLimit = ~uint256(0) >> 20;  // ArgonToken starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nEnforceBlockUpgradeMajority = 750;
@@ -164,11 +144,9 @@ public:
         assert(hashGenesisBlock == uint256("0x00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6"));
         assert(genesis.hashMerkleRoot == uint256("0xe0028eb9648db56b1ac77cf090b99048a8007e2bb64b68f092c03c7f56a662c7"));
 
-        vSeeds.push_back(CDNSSeedData("darkcoin.io", "dnsseed.darkcoin.io"));
-        vSeeds.push_back(CDNSSeedData("masternode.io", "dnsseed.masternode.io"));
-        vSeeds.push_back(CDNSSeedData("argontoken.io", "dnsseed.argontoken.io"));
+        //vSeeds.push_back(CDNSSeedData("darkcoin.io", "dnsseed.darkcoin.io"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = list_of( 76);                    // ArgonToken addresses start with 'X'
+        base58Prefixes[PUBKEY_ADDRESS] = list_of( 23);                    // ArgonToken addresses start with 'A'
         base58Prefixes[SCRIPT_ADDRESS] = list_of( 16);                    // ArgonToken script addresses start with '7'
         base58Prefixes[SECRET_KEY] =     list_of(204);                    // ArgonToken private keys start with '7' or 'X'
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x02)(0xFE)(0x52)(0xF8); // ArgonToken BIP32 pubkeys start with 'drkv'
