@@ -47,7 +47,7 @@ static bool AppInitRawTx(int argc, char* argv[])
     if (argc<2 || mapArgs.count("-?") || mapArgs.count("-help"))
     {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Dash Core argontoken-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("ArgonToken Core argontoken-tx utility version") + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
               "  argontoken-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded argontoken transaction") + "\n" +
               "  argontoken-tx [options] -create [commands]   " + _("Create hex-encoded argontoken transaction") + "\n" +

@@ -10,7 +10,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between argontoken-cli and argontokend)
- * of a given instance of the Dash system.
+ * of a given instance of the ArgonToken system.
  */
 class CBaseChainParams
 {

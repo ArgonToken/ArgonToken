@@ -1,9 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Dash
-Comment=Dash P2P Cryptocurrency
-Comment[fr]=Dash, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Dash, eşten eşe kriptografik sanal para birimi
+Name=ArgonToken
+Comment=ArgonToken P2P Cryptocurrency
+Comment[fr]=ArgonToken, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=ArgonToken, eşten eşe kriptografik sanal para birimi
 Exec=argontoken-qt %u
 Terminal=false
 Type=Application

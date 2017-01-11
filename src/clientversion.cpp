@@ -13,7 +13,7 @@
  * for both argontokend and argontoken-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Dash Core");
+const std::string CLIENT_NAME("ArgonToken Core");
 
 /**
  * Client version number

@@ -58,7 +58,7 @@ Release Process
 
   Only missing files will be fetched, so this is safe to re-run for each build.
 
-###Build Dash Core for Linux, Windows, and OS X:
+###Build ArgonToken Core for Linux, Windows, and OS X:
 
 	./bin/gbuild --commit argontoken=v${VERSION} ../argontoken/contrib/gitian-descriptors/gitian-linux.yml
 	./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../argontoken/contrib/gitian-descriptors/gitian-linux.yml
@@ -153,11 +153,11 @@ rm SHA256SUMS
 
   - Release sticky on argontokentalk: https://argontokentalk.org/index.php?board=1.0 ***TODO***
 
-  - Dash-development mailing list
+  - ArgonToken-development mailing list
 
   - Update title of #argontoken on Freenode IRC
 
-  - Optionally reddit /r/Dashpay, ... but this will usually sort out itself
+  - Optionally reddit /r/ArgonToken, ... but this will usually sort out itself
 
 - Notify Flare (?) ***TODO*** so that he can start building [https://launchpad.net/~argontoken/+archive/ubuntu/argontoken](the PPAs) ***TODO***
 
