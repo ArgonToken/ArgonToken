@@ -14,7 +14,7 @@
 
 #include "main.h"
 #include "sync.h"
-#include "uint256.h"
+#include "arith_uint256.h"
 #include "util.h"
 #include "wallet.h"
 

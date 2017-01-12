@@ -5,7 +5,7 @@
 #include "main.h"
 #include "miner.h"
 #include "pubkey.h"
-#include "uint256.h"
+#include "arith_uint256.h"
 #include "util.h"
 
 #include <boost/test/unit_test.hpp>

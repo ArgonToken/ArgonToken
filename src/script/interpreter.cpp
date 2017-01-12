@@ -12,7 +12,7 @@
 #include "eccryptoverify.h"
 #include "pubkey.h"
 #include "script/script.h"
-#include "uint256.h"
+#include "arith_uint256.h"
 
 using namespace std;
 

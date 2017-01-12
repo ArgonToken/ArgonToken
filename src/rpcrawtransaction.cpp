@@ -15,7 +15,7 @@
 #include "script/script.h"
 #include "script/sign.h"
 #include "script/standard.h"
-#include "uint256.h"
+#include "arith_uint256.h"
 #ifdef ENABLE_WALLET
 #include "wallet.h"
 #endif

@@ -16,7 +16,7 @@
 #include "random.h"
 #include "streams.h"
 #include "sync.h"
-#include "uint256.h"
+#include "arith_uint256.h"
 #include "utilstrencodings.h"
 
 #include <deque>

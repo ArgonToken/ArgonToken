@@ -7,7 +7,7 @@
 
 #include "chainparams.h"
 #include "main.h"
-#include "uint256.h"
+#include "arith_uint256.h"
 
 #include <stdint.h>
 

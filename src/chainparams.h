@@ -10,7 +10,7 @@
 #include "checkpoints.h"
 #include "primitives/block.h"
 #include "protocol.h"
-#include "uint256.h"
+#include "arith_uint256.h"
 
 #include <vector>
 

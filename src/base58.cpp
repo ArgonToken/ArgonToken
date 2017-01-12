@@ -5,7 +5,7 @@
 #include "base58.h"
 
 #include "hash.h"
-#include "uint256.h"
+#include "arith_uint256.h"
 
 #include <assert.h>
 #include <stdint.h>

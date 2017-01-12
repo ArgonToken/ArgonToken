@@ -3,9 +3,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "arith_uint256.h"
+#include "arith_arith_uint256.h"
 
-#include "uint256.h"
+#include "arith_uint256.h"
 #include "utilstrencodings.h"
 #include "crypto/common.h"
 
