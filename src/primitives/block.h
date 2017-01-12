@@ -8,7 +8,7 @@
 
 #include "primitives/transaction.h"
 #include "serialize.h"
-#include "arith_uint256.h"
+#include "uint256.h"
 
 /** The maximum allowed size for a serialized block, in bytes (network rule) */
 static const unsigned int MAX_BLOCK_SIZE = 1000000;
